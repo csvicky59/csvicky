@@ -4,6 +4,7 @@
 	static  LinkedList<String> list= new LinkedList<String>();
 	 public static void main(String args[] ){
 		 Scanner sc=new Scanner(System.in);
+		 try{
 		 int num=sc.nextInt();
 		 String stab="";int no=1;
 		   String s=Integer.toString(num);
@@ -29,6 +30,10 @@
        String ss="";
        lastCheck(ss,arr);
        System.out.println(list.size());
+	 }
+  catch(Exception e){
+	  System.out.println("Wrong input Enter input without zero");
+  }
        }
 	 public static String createfirst(int arr[],String stable){
 		  for(int i=0;i<arr.length;i++){
